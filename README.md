@@ -1,6 +1,6 @@
 > Fork from  [ftp-deploy](https://github.com/simonh1000/ftp-deploy), fix issue [#67](https://github.com/simonh1000/ftp-deploy/issues/67)
 
-# ftp-deploy
+# my-ftp-deploy
 
 A Node.js package to help with deploying code. Ftp a folder from your local disk to a remote ftp destination. Does not delete from destination directory.
 
@@ -9,7 +9,7 @@ Version 2.0.0 is an almost complete re-write to use promises and [promise-ftp](h
 ## Installation
 
 ```js
-npm install --save-dev ftp-deploy
+npm install --save-dev my-ftp-deploy
 ```
 
 ## Usage
@@ -26,7 +26,7 @@ The most basic usage (stops uploading when an error occurs):
 **Note:** that in version 2 the config file expects a field of `user` rather than `username` in 1.x.
 
 ```js
-var FtpDeploy = require('ftp-deploy');
+var FtpDeploy = require('my-ftp-deploy');
 var ftpDeploy = new FtpDeploy();
 
 var config = {
