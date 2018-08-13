@@ -1,6 +1,6 @@
 {
     "name": "my-ftp-deploy",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Simon Hampton,pq1949",
     "description": "Ftp a folder from your local disk to an ftp destination. Does not delete from destination directory. Derived from grunt-ftp-deploy",
     "main": "src/ftp-deploy",
@@ -9,13 +9,14 @@
         "test_server": "node test/server.js",
         "commit": "git cz",
         "commitmsg": "validate-commit-msg",
-        "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
+        "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+        "prepublish": "gulp version"
     },
     "husky": {
-      "hooks": {
-        "pre-commit": "npm run commitmsg",
-        "pre-push": "npm run commitmsg"
-      }
+        "hooks": {
+            "pre-commit": "npm run commitmsg",
+            "pre-push": "npm run commitmsg"
+        }
     },
     "dependencies": {
         "bluebird": "^3.5.1",
@@ -29,6 +30,8 @@
         "cz-conventional-changelog": "^2.1.0",
         "delete": "^1.1.0",
         "ftp-srv": "^2.16.1",
+        "gulp": "^3.9.1",
+        "gulp-update-version": "^1.0.1",
         "husky": "^1.0.0-rc.13",
         "mocha": "^4.1.0",
         "validate-commit-msg": "^2.14.0"
