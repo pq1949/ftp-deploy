@@ -1,7 +1,7 @@
 > Fork from  [ftp-deploy](https://github.com/simonh1000/ftp-deploy), fix issue [#67](https://github.com/simonh1000/ftp-deploy/issues/67)
 
 # my-ftp-deploy
-
+[![](https://img.shields.io/npm/dt/my-ftp-deploy.svg)](https://www.npmjs.com/package/my-ftp-deploy)
 A Node.js package to help with deploying code. Ftp a folder from your local disk to a remote ftp destination. Does not delete from destination directory.
 
 Version 2.0.0 is an almost complete re-write to use promises and [promise-ftp](https://github.com/realtymaps/promise-ftp) instead of jsftp. The one breaking change is listed in the Usage section.
